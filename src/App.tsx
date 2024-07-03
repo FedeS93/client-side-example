@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     const getDigimons = async () => {
-      const response = await fetch('https://digi-api.com/api/v1/digimon?pageSize=20&level=child')
+      const response = await fetch('https://digi-api.com/api/v1/digimon?pageSize=1000')
       const digimons = await response.json()
       setDigimons(digimons.content)
     }

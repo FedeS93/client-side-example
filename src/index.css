@@ -1,12 +1,25 @@
+body {
+  padding: 2rem;
+}
+
 .container-images {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: stretch;
+  justify-items: stretch;
 }
+
+.container-images img {
+  width: 100%;
+}
+
 .border-image {
   border: 4px solid rgb(232, 232, 232);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: min-content;
+  width: 100%;
 }
 .name{
   font-size: 20px;
